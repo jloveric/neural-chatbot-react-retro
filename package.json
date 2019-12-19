@@ -4,6 +4,10 @@
   "private": true,
   "description": "A retro looking react component for the neural-chatbot.",
   "main": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jloveric/neural-chatbot-react-retro.git"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
