@@ -1,17 +1,19 @@
 {
   "name": "neural-chatbot-react-retro",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "description": "A retro looking react component for the neural-chatbot.",
-  "main": "src/NeuralChatbotRetro.js",
+  "main": "build/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jloveric/neural-chatbot-react-retro.git"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.7.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
+    "extract-text-webpack-plugin": "^3.0.2",
     "neural-chatbot": "^2.0.8",
     "neural-phrasex": "^1.0.11",
     "react": "^16.12.0",
@@ -19,10 +21,8 @@
     "react-scripts": "3.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "webpack --watch",
+    "build": "webpack"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,12 +40,11 @@
     ]
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.6",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-env": "^1.7.0",
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
     "webpack-cli": "^3.3.10"
   }
 }
