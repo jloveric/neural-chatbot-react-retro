@@ -8,6 +8,18 @@
     "type": "git",
     "url": "git+https://github.com/jloveric/neural-chatbot-react-retro.git"
   },
+  "keywords": [
+    "tensorflow",
+    "nlu",
+    "react",
+    "sentence embeddings",
+    "chatbot",
+    "ai",
+    "conversational agent",
+    "semantic",
+    "client",
+    "browser"
+  ],
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
     "@testing-library/jest-dom": "^4.2.4",
