@@ -1,6 +1,6 @@
 {
   "name": "neural-chatbot-react-retro",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": false,
   "description": "A retro looking react component for the neural-chatbot.",
   "main": "build/index.js",
