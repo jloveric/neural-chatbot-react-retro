@@ -14,7 +14,7 @@ The Neural Chatbot is a completely client side chat bot.  You can embed it in br
 
 ![Image of Component](BotImage.png)
 
-The component has several properties including the "botConfig" which contains the phrase database.  See [here](https://github.com/jloveric/neural-chatbot-react-retro/blob/master/src/Chatbot.js) for an example.  The framework was transformed from a server side bot that used elastic search and mongodb, there are still some big bugs.  Watch this space as the project evolves.  A running example is provided [here](https://jloveric.github.io/)
+The component has several properties including the "botConfig" which contains the phrase database.  See [here](https://github.com/jloveric/neural-chatbot-react-retro/blob/master/src/Chatbot.js) for an example. A running (work in progress) example is provided [here](https://jloveric.github.io/)
 
 Here are the default properties for the component
 
