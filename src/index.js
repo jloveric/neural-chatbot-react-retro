@@ -107,9 +107,7 @@ class NeuralChatbotRetro extends Component {
     return (<form id="mainForm" autoComplete="off" onSubmit={this.handleSubmit.bind(this)} style={{ backgroundColor: this.props.backgroundColor, border: 'none', "fontSize": this.props.fontSize }}>
       {
         this.state.list.map((val, id) => {
-          return <div key={id} style={{ color: val.color, borderColor: this.props.backgroundColor, border: 'none' }}>
-            {val.symbol + val.text}
-          </div>
+          return <div key={id} style={{ color: val.color, borderColor: this.props.backgroundColor, border: 'none' }} dangerouslySetInnerHTML={val.symbol + val.text}/>
         })
       }
       <div style={{ color: this.props.userColor, display: "inline-block", "textAlign": "right" }}>{this.props.userSymbol}</div>
