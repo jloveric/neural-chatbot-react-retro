@@ -27,8 +27,8 @@
     "@testing-library/user-event": "^7.2.1",
     "dompurify": "^2.0.7",
     "extract-text-webpack-plugin": "^3.0.2",
-    "neural-chatbot": "^2.0.14",
-    "neural-phrasex": "^1.0.15",
+    "neural-chatbot": "^2.0.16",
+    "neural-phrasex": "^1.0.16",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0"
