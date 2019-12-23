@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { BasicBot } from 'neural-chatbot';
 import { UserData } from 'neural-phrasex';
+import DOMPurify from 'dompurify'
+const domPurify = DOMPurify(window)
 
 import defaultConfig from './Chatbot';
 
@@ -108,7 +110,7 @@ class NeuralChatbotRetro extends Component {
       {
         this.state.list.map((val, id) => {
           return (
-          <div key={id} style={{ color: val.color, borderColor: this.props.backgroundColor, border: 'none' }} dangerouslySetInnerHTML={{__html : val.symbol+val.text}}/>
+          <div key={id} style={{ color: val.color, borderColor: this.props.backgroundColor, border: 'none' }} dangerouslySetInnerHTML={{__html : domPurify.sanitize(val.symbol+val.text)}}/>
           )
         })
       }
